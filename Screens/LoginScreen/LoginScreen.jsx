@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image, ImageBackground } from 'react-native';
 import {collection, query, doc, where, getDocs} from 'firebase/firestore';
 import { db } from '../../config/FirbaseConfig';
 import * as Animatable from 'react-native-animatable';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-=======
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image } from 'react-native';
->>>>>>> ecff7ffbc70ca8db8144207a629ac9956f7ee923
 
 const LoginScreen = ({navigation}) => {
   const [mobileNumber, setMobileNumber] = useState('');
   const [otp, setOtp] = useState('');
-<<<<<<< HEAD
   const [aadharNumber, setAadharNumber] = useState('');
 
   const handleLogin = async() => {
@@ -39,12 +34,6 @@ const LoginScreen = ({navigation}) => {
         console.error("Error fetching farmer details:", error);
         Alert.alert('Error', 'Failed to fetch farmer details');
       }
-=======
-
-  const handleLogin = () => {
-    if (mobileNumber == '8218553387' && otp == '654321') {
-      navigation.navigate('HomeStack')
->>>>>>> ecff7ffbc70ca8db8144207a629ac9956f7ee923
     }
     else {
       Alert.alert('Login', 'Details are invalid');
