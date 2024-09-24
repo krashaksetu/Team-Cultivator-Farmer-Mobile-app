@@ -15,7 +15,10 @@ const ProductForm = () => {
     const [productCategory, setProductCategory] = useState('Fruits'); // Default category
     const route = useRoute(); // Access route params
     const navigation = useNavigation(); // Navigation instance
+<<<<<<< HEAD
     const storage = getStorage();
+=======
+>>>>>>> ecff7ffbc70ca8db8144207a629ac9956f7ee923
 
     useEffect(() => {
         if (route.params?.product) {

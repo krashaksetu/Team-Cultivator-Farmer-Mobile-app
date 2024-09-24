@@ -24,7 +24,6 @@ const ProfileScreen = ({route, navigation}) => {
       }
     };
 
-
     const handleLogout = () => {
         navigation.navigate('Login');  // Replace 'Login' with the name of your login screen in the navigator
     };
